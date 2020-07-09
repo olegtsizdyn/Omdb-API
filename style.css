@@ -1,0 +1,217 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+.wrapper{
+    padding: 0 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.search_nav{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#search_input{
+    font-size: 15px;
+    padding: 20px;
+    width: 49%;
+    height: 40px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    outline: none;
+}
+
+#search_button{
+    font-size: 15px;
+    width: 49%;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background: rgb(26, 152, 89);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search_button:hover{
+    cursor: pointer;
+}
+
+.content_blocks{
+    width: 100%;
+    display: none;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.block{
+    margin-bottom: 50px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.image{
+    width: 100%;
+    height: 370px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.name{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(160, 160, 160);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.info{
+    font-size: 13px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.more_details{
+    width: 100%;
+    height: 45px;
+    border: none;
+    background: rgb(26, 152, 89);
+    color: white;
+}
+
+.more_details:hover{
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper_modal{
+    width: 100%;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgb(214, 214, 214);
+}
+
+.more_details_modal{
+    padding: 20px;
+    width: 80%;
+    height: 90vh;
+    background: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.poster{
+    width: 30%;
+    height: 100%;
+}
+
+.details{
+    width: 68%;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+}
+
+.name_from_details{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(160, 160, 160);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.details p{
+    margin-bottom: 15px;
+}
+
+.details::after{
+    content: url();
+    width: 20px;
+    height: 20px;
+    background: url(https://image.flaticon.com/icons/png/512/59/59836.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    position: absolute;
+    top: -20px;
+    right: -50px;
+}
